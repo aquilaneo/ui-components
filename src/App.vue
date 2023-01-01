@@ -1,11 +1,11 @@
 <template>
 	<TabView>
-		<TabContent label="タブ1" :checked="true">
+		<TabContent label="タブ1" formName="tab-a">
 			<h1>タブ1の中身</h1>
 			<div>中身</div>
 		</TabContent>
 
-		<TabContent label="タブ2">
+		<TabContent label="タブ2" formName="tab-a">
 			<h1>タブ2の中身</h1>
 			<div>中身</div>
 		</TabContent>
