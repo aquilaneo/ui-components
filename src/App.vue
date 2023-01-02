@@ -1,14 +1,12 @@
 <template>
-	<TabView>
-		<TabContent label="タブ1" formName="tab-a">
-			<h1>タブ1の中身</h1>
-			<div>中身</div>
-		</TabContent>
+	<TabView :tabLabels="['AAA', 'BBB']">
+		<template #tab0>タブ0</template>
+		<template #tab1>タブ1</template>
+	</TabView>
 
-		<TabContent label="タブ2" formName="tab-a">
-			<h1>タブ2の中身</h1>
-			<div>中身</div>
-		</TabContent>
+	<TabView :tabLabels="['CCC', 'DDD']">
+		<template #tab0>タブA</template>
+		<template #tab1>タブB</template>
 	</TabView>
 </template>
 
@@ -18,5 +16,4 @@
 
 <script setup lang="ts">
 import TabView from "@/components/TabView.vue";
-import TabContent from "@/components/TabContent.vue";
 </script>
