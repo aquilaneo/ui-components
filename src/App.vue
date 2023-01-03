@@ -1,7 +1,11 @@
 <template>
-	<SplitView initialWidthLeft="10rem" initialWidthRight="10rem" minWidthRight="1rem" maxWidthRight="20rem">
-		<template #left>あああ</template>
-		<template #right>いいい</template>
+	<SplitView
+		:initialWidths="['10rem','10rem', '10rem']"
+		:minWidths="['2rem','2rem','2rem']"
+		:maxWidths="['20rem','20rem','20rem']">
+		<template #split1>あああ</template>
+		<template #split2>いいい</template>
+		<template #split3>ううう</template>
 	</SplitView>
 </template>
 
